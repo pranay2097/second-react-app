@@ -1,5 +1,6 @@
 //using object literal
 function App(){
+  let id = "id1";
   let str = `hello universe`;
   let pi = 3.14;
   let active = true;
@@ -8,13 +9,20 @@ function App(){
   //JSX :: user interface
     return (
       <>
-      <h1>Hello world</h1>
+      <h1 id="id1">Hello world</h1>
       <h1>str</h1>
-      <h1>{str}</h1>
+      <h1 id={id}>{str}</h1>
       <h1>{str.toUpperCase()}</h1>
       <h1>PI {pi} </h1>
       <h1>{user.name}</h1>
       <h1>ID: {user.id}  Name: {user.name}</h1>
+
+      {/** use cases */}
+      <h1 id="id1">Hello World</h1>
+      <h1 id={"id1"}>Hello World</h1>
+      <h1 id={`id1`}>Hello World</h1>
+      <h1 id={id}>Hello World</h1>
+      
       
       </>
     );
