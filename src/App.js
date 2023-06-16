@@ -1,22 +1,12 @@
-//JSX = JS + HTML
-//If a function return html, this becomes a user defined tag
-//<App></App>
-//<App/>
-//compare with predefined tag
-//h1, p, li
-//why master case convention
-//for pre defoned tag :: lowercase :: <h1>
-//for useer define :: mastercase:: <App>
-
+//JSX with 1 Tag or 1 H1
+//JSX with 2 Tag or 2 h1
+//RULE: if using more than 1 tag; it must be under parent
 function App(){
-  return <h1>Hello world</h1>;
-}
-
-//JSX = JS + HTML/XML
-//IF YOUR FUNCTION RETURN HTML
-//CONVENTION :: START YOUR FUNCTION NAME IN CAPITAL LETTER
-function Sum(){
-  return <h1>100</h1>;
+  return (
+    <>
+      <h1>Hello</h1>;
+    </>
+  )
 }
 
 export default App;
