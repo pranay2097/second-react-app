@@ -1,30 +1,24 @@
-//using object literal
-function App(){
-  let id = "id1";
-  let str = `hello universe`;
-  let pi = 3.14;
-  let active = true;
-  let user = { id: 1, name: "pranay"};
+//HTML+JS=JSx
+//putting the brain in html
+//Styling :: color
+//
+function App() {
+  //object literal
+  let style = {background: "red", color: "white"};
+  return (
+    <>
+      <h1 style={style}>Hello World</h1>
+      {/**first curly brace represent js expression */}
+      {/**second curly brace, its object literal */}
+      <h1 style={{background: "blue", color: "yellow"}}>hello world</h1>
 
-  //JSX :: user interface
-    return (
-      <>
-      <h1 id="id1">Hello world</h1>
-      <h1>str</h1>
-      <h1 id={id}>{str}</h1>
-      <h1>{str.toUpperCase()}</h1>
-      <h1>PI {pi} </h1>
-      <h1>{user.name}</h1>
-      <h1>ID: {user.id}  Name: {user.name}</h1>
-
-      {/** use cases */}
-      <h1 id="id1">Hello World</h1>
-      <h1 id={"id1"}>Hello World</h1>
-      <h1 id={`id1`}>Hello World</h1>
-      <h1 id={id}>Hello World</h1>
-      
-      
-      </>
-    );
+      {/**observation */}
+      {/**style attributes becomes camelcase in nature */}
+      {/**values are writing in double quotes */}
+      {/**multiple properties are separated by comma */}
+      <h1 style={{ backgroundColor: "green", color: "pink", padding: "8px"}}>Hello world</h1>
+    </>
+  );
 }
+
 export default App;
