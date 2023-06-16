@@ -1,22 +1,29 @@
-//mixing js in the html
-//mixing js in jsx
-//data binding in html
-//interpolation :: data binding in jsx
+
 function App(){
   let str = `hello universe`;
+  let pi = 3.14;
+  let active = true;
+  let isUserLoggedIn = true;
 
-  //JSX :: view :: user interface
-  //mix html+js
+  //JSX 
     return (
       <>
       <h1>Hello world</h1>
       <h1>str</h1>
       <h1>{str}</h1>
       <h1>{str.toUpperCase()}</h1>
+      <h1>PI {pi} </h1>
 
-      {[1, 1, 1].map((item) => (
-      <h1>Hello </h1>
-      ))}
+      {/** this is comment */}
+      {/** usage of boolean */}
+      <h1>{active ? "morning" : "evening" }</h1>
+
+      {/** most useful */}
+      {active && <h1>afternoon</h1> }
+      {active ? <h1>bye</h1> : <h1>tata</h1> }
+
+      {/**if user logged in */}
+      {isUserLoggedIn && <h1>welcome cdac</h1>}
       
       </>
     );
