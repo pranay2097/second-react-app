@@ -1,12 +1,18 @@
-//JSX with 1 Tag or 1 H1
-//JSX with 2 Tag or 2 h1
-//RULE: if using more than 1 tag; it must be under parent
-function App(){
+//JSX :: Return HTML
+//SYNTAX RULE :: If one liner, parenthis are optional
+//SYNTAX RULE :: for multi liner, parenthis are required
+//SYNTAX :: ()
+//SYNTAX :: <h1>Hello</h1>
+//SYNTAX :: (<h1>Hello</h1>)
+//SYNTAX ::
+
+function App() {
+  //JSX
   return (
     <>
-      <h1>Hello</h1>;
+      <h1>1</h1>
     </>
-  )
+  );
 }
 
 export default App;
