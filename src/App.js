@@ -1,17 +1,9 @@
-//HTML+JS=JSx
-//putting the brain in html
-//Styling :: color
-//external styling
-import "./App.css";
-
-/**
- * because 'class' is a keyword in js
- */
+import "bootstrap/dist/css/bootstrap.css";
 function App() {
   return (
     <>
-      <h1 className="beautiful">Hello world</h1>
-      <h1 style={{color: "red"}}>hello</h1>
+      <h1>Hello world</h1>
+
     </>
   );
 }
