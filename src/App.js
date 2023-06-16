@@ -1,18 +1,10 @@
-//JSX :: Return HTML
-//SYNTAX RULE :: If one liner, parenthis are optional
-//SYNTAX RULE :: for multi liner, parenthis are required
-//SYNTAX :: ()
-//SYNTAX :: <h1>Hello</h1>
-//SYNTAX :: (<h1>Hello</h1>)
-//SYNTAX ::
+//JSX SYNTAX
+function App(){
+  //jsx single line :: with optional parenthesis
+    let jsx1 = <h1>Hello universe</h1>;
 
-function App() {
-  //JSX
-  return (
-    <>
-      <h1>1</h1>
-    </>
-  );
+    return jsx1;
 }
+
 
 export default App;
